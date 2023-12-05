@@ -1,0 +1,51 @@
+<div class="container mt-5">
+    <!-- Current Savings Section -->
+    <div class="row mb-4">
+        <div class="col">
+            <h2>Current Savings</h2>
+            <p class="lead">$12,345.67</p> <!-- Replace with dynamic content -->
+        </div>
+    </div>
+
+    <!-- Add New Savings Goal Form -->
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Add New Savings Goal</h3>
+            <form action="/finance/addSavings" method="POST">
+                <div class="form-group">
+                    <label for="goalName">Goal Name</label>
+                    <input type="text" class="form-control" id="goalName" name="goalName" required>
+                </div>
+                <div class="form-group">
+                    <label for="targetAmount">Target Amount</label>
+                    <input type="number" class="form-control" id="targetAmount" name="targetAmount" step="0.01"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="deadline">Deadline</label>
+                    <input type="date" class="form-control" id="deadline" name="deadline" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Goal</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- List of Savings Goals -->
+    <div class="row mt-4">
+        <div class="col">
+            <h3>Savings Goals</h3>
+            <ul class="list-group">
+                <!-- This section would be dynamically generated based on the savings goals in the database -->
+                <li class="list-group-item">
+                    <h5>Emergency Fund</h5>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                    <small>Target: $2,000.00 by 12/31/2023</small>
+                </li>
+                <!-- More goals can be added here -->
+            </ul>
+        </div>
+    </div>
+</div>

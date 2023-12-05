@@ -1,0 +1,23 @@
+<h1>Create Budget</h1>
+<form action="/finances/budgets" method="POST">
+    <label for="category">Category:</label>
+    <input type="text" id="category" name="category" required>
+
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" required>
+
+    <label for="period">Period:</label>
+    <select id="period" name="period" required>
+        <option value="weekly">Weekly</option>
+        <option value="monthly">Monthly</option>
+        <option value="yearly">Yearly</option>
+    </select>
+
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" name="startDate" required>
+
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" name="endDate" required>
+
+    <button type="submit">Create Budget</button>
+</form>

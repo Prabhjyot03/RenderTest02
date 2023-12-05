@@ -1,0 +1,12 @@
+<h1>Financial Goals</h1>
+<ul>
+    {{#each financialGoals}}
+    <li>
+        <strong>Title:</strong> {{this.title}}
+        <strong>Target Amount:</strong> {{this.targetAmount}}
+        <strong>Current Amount:</strong> {{this.currentAmount}}
+        <strong>Deadline:</strong> {{this.deadline}}
+        <strong>Completed:</strong> {{#if this.isCompleted}} Yes {{else}} No {{/if}}
+    </li>
+    {{/each}}
+</ul>

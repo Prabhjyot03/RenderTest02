@@ -1,0 +1,12 @@
+<h1>Budgets</h1>
+<ul>
+  {{#each budgets}}
+  <li>
+    <strong>Category:</strong> {{this.category}}
+    <strong>Amount:</strong> {{this.amount}}
+    <strong>Period:</strong> {{this.period}}
+    <strong>Start Date:</strong> {{this.startDate}}
+    <strong>End Date:</strong> {{this.endDate}}
+  </li>
+  {{/each}}
+</ul>
